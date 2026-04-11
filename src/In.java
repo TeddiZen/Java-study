@@ -4,7 +4,7 @@ import java.io.Reader;
 public class In {
     public static void main() {
         try (
-                Reader fis = new FileReader("data/test1.txt");
+                Reader fis = new FileReader("data/test1.txt")
                 ){
             char[] c = new char[3];
             int len;
