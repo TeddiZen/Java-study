@@ -6,7 +6,7 @@ import java.util.concurrent.locks.ReentrantLock;
 public class BandCount {
      private String name;
      private int count;
-     private Lock lock = new ReentrantLock();
+     private final Lock lock = new ReentrantLock();
      public BandCount(String name, int count) {
         this.name = name;
         this.count = count;
