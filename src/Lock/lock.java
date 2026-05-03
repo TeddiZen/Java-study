@@ -21,7 +21,6 @@ public class lock {
             System.out.println("线程2结束");
         });
         
-        thread1.start();
         thread2.start();
     }
         
