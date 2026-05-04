@@ -25,7 +25,7 @@ public class lock {
         });
         Thread thread2 = new Thread(() -> {
             System.out.println("线程二开始");
-            synchronized (lock1) {
+            synchronized (lock2) {
                 System.out.println("线程二1锁开始");
                 try {
                     Thread.sleep(1000);
@@ -33,7 +33,7 @@ public class lock {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                synchronized (lock2) {
+                synchronized (lock1) {
                     System.out.println("线程二2锁");
                 }
                 System.out.println("线程二1锁结束");
